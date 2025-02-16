@@ -1,0 +1,14 @@
+.gradient-text {
+    background: linear-gradient(90deg, #13255d, #5369af);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar {
+  position: relative;
+  overflow: visible;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
