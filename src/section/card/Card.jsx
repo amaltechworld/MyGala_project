@@ -7,7 +7,7 @@ const Card = () => {
         <div className="bg-[#fdfafa]">
             <div className="container mx-auto px-4 py-16">
                 <div className="text-center mb-16">
-                    <h1 className="text-4xl md:text-5xl lg:text-7xl font-playfair font-medium mb-4">
+                    <h1 className="text-gray-900 text-4xl md:text-5xl lg:text-7xl font-playfair font-medium mb-4">
                         What We Serve To Plan Your
                         <div className="block lg:inline">
                             <span className="text-olive-600 ml-2">                 

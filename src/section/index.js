@@ -1,5 +1,5 @@
 import Card from "./card/Card";
-import Footer from "./Footer";
+import Footer from "./footer/Footer";
 import Hero from "./Hero";
 import PhotoGallery from "./PhotoGallery";
 import Recent from "./Recent";
