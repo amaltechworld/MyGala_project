@@ -5,7 +5,7 @@ import {
     VendorGallery,
     Testimonial,
     PhotoGallery,
-    Recent,
+    DashboardStats,
     Newsletter,
     Footer,
 } from "./section";
@@ -30,7 +30,7 @@ export default function App() {
                 <PhotoGallery />
             </section>
             <section>
-                <Recent />
+                <DashboardStats />
             </section>
             <section>
                 <Newsletter />
