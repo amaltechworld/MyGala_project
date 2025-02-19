@@ -3,7 +3,7 @@ import Footer from "./footer/Footer";
 import Hero from "./Hero";
 import PhotoGallery from "./PhotoGallery";
 import Recent from "./Recent";
-import Subscribe from "./Subscribe";
+import Newsletter from "./NewsLetter";
 import Testimonial from "./Testimonial";
 import VendorGallery from "./VendorGallery";
 
@@ -13,7 +13,7 @@ export {
     Hero,
     PhotoGallery,
     Recent,
-    Subscribe,
+    Newsletter,
     Testimonial,
     VendorGallery,
 };

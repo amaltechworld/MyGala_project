@@ -3,13 +3,13 @@ import { SocialIcons } from './footerData';
 
 const FooterComponent = ({title, links}) => {
   return (
-      <nav className="hidden lg:block lg:pl-10 lg:ml-10 xl:pl-20 xl:ml-20">
+      <nav className="hidden lg:block ">
           {/* head */}
-          <h6 className="text-white text-3xl font-semibold lg:pt-4 lg:pb-8">
+          <h6 className="text-white text-3xl font-playfair font-semibold lg:pt-4 lg:pb-8">
               {title}
           </h6>
           {/* section */}
-          <ul className="space-y-2">
+          <ul className="space-y-2 font-poppins">
               {links.map((item) => (
                   <li key={item.id}>
                       <a

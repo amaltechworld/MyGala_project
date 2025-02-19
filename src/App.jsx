@@ -6,7 +6,7 @@ import {
     Testimonial,
     PhotoGallery,
     Recent,
-    Subscribe,
+    Newsletter,
     Footer,
 } from "./section";
 
@@ -33,7 +33,7 @@ export default function App() {
                 <Recent />
             </section>
             <section>
-                <Subscribe />
+                <Newsletter />
             </section>
             <section>
                 <Footer />
