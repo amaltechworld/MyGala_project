@@ -1,8 +1,7 @@
 
+
 const PhotoGallery = () => {
-  return (
-    <div></div>
+  return (  <div></div>
   )
 }
-
-export default PhotoGallery
+export default PhotoGallery;
