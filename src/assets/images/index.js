@@ -7,6 +7,9 @@ import C_HouseWarming from './CardHouseWarming.jpg';
 import C_NamingCeremony from './CardNamingCeremony.jpg';
 import C_Wedding from './CardWedding.png';
 
+import DashImg1 from './DashboardImage1.jpg';
+import DashImg2 from './DashboardImage2.jpg';
+
 import F_logo from './footerlogo.png';
 
 export {   
@@ -18,6 +21,9 @@ export {
     C_HouseWarming,
     C_NamingCeremony,
     C_Wedding,
+
+DashImg1,
+DashImg2,
 
     F_logo
 };
