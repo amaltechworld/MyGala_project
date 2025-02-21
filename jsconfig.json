@@ -2,7 +2,11 @@
     "compilerOptions": {
         "jsx": "react",
         "module": "ESNext",
-        "moduleResolution": "node"
+        "moduleResolution": "node",
+        "baseUrl": "./src",
+        "paths": {
+            "*": ["*"]
+        }
     },
     "include": ["src/**/*"]
 }

@@ -1,8 +1,7 @@
 
-const VendorGallery = () => {
-  return (
-    <div></div>
-  )
-}
 
-export default VendorGallery
+const VendorGallery = () => {
+    return ;
+};
+
+export default VendorGallery;
