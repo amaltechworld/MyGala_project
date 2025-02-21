@@ -12,13 +12,13 @@ const iconComponents = {
 
 const Testimonial = () => {
     return (
-        <div className="flex flex-col lg:flex-row items-center justify-center lg:min-h-screen bg-gray-50  lg:px-20 py-20">
+        <div className="flex flex-col lg:flex-row items-center justify-center lg:min-h-screen bg-[#fdfafa]  lg:px-32 py-20 mx-0">
             {/* Left Section */}
             <div className="md:w-3/4 lg:w-1/2 text-center lg:text-left flex flex-col lg:flex-none">
                 {/* Heading */}
-                <h1 className="text-3xl md:text-4xl font-semibold text-gray-900 px-5">
+                <h1 className="text-2xl md:text-4xl lg:text-6xl font-medium font-playfair text-gray-900 px-5 lg:px-0">
                     Effortlessly Plan and Manage Your Perfect Events with Our{" "}
-                    <span className="text-green-700">
+                    <span className="text-[#788247]">
                         Streamlined, Smart, and Simple App
                     </span>
                 </h1>
@@ -27,14 +27,14 @@ const Testimonial = () => {
                 <div className="relative w-full flex justify-center lg:hidden mt-6">
                     <div
                         style={{ backgroundImage: `url(${T_background})` }}
-                        className="w-full max-w-md h-52 rounded-lg bg-cover bg-center relative"
+                        className="w-full max-w-md h-52 md:rounded-lg bg-cover bg-center relative"
                     >
                         {/* Feature Cards Overlay */}
-                        <div className="absolute bottom-[-5px] left-1/2 transform -translate-x-1/2 grid grid-cols-2 gap-4 w-[90%]  p-4  ">
+                        <div className="absolute left-1/2 transform -translate-x-1/2 grid grid-cols-2 gap-4 w-[90%]  py-4  ">
                             {testimonialData.map((feature, index) => (
                                 <div
                                     key={index}
-                                    className={`flex items-center space-x-3 p-4 rounded-md ${feature.color} shadow-md`}
+                                    className={`flex items-center space-x-3 p-4 font-poppins rounded-md ${feature.color} shadow-md`}
                                 >
                                     {iconComponents[feature.icon]}
                                     <span className="text-gray-800 font-medium">
@@ -47,7 +47,7 @@ const Testimonial = () => {
                 </div>
 
                 {/* Paragraph */}
-                <p className="mt-4 text-gray-600 ">
+                <p className="mt-4 text-gray-600 font-poppins">
                     Download App to unlock the following features.
                 </p>
 
@@ -79,22 +79,22 @@ const Testimonial = () => {
             </div>
 
             {/* Right Section */}
-            <div className="hidden lg:flex relative  lg:w-1/2 justify-center lg:mt-0 ">
-                <img
-                    src={T_background}
-                    alt="Decorative Background"
-                    className="w-full max-w-md rounded-lg h-full"
-                />
+            <div className="hidden lg:flex relative  lg:w-1/2 lg:justify-center lg:mt-0 h-screen">
+
+                <div
+                    style={{ backgroundImage: `url(${T_background})` }}
+                    className="w-full max-w-md h-[80vh] md:rounded-lg bg-cover bg-center relative"
+                ></div>
 
                 {/* Feature Cards Overlay */}
-                <div className="absolute top-10 left-1/2 transform -translate-x-1/2 flex flex-col gap-4 ">
+                <div className="absolute top-64 left-1/2 transform -translate-x-1/2 flex flex-col gap-4   ">
                     {testimonialData.map((feature, index) => (
                         <div
                             key={index}
-                            className={`flex items-center space-x-3 p-4 rounded-md ${feature.color} shadow-md w-64`}
+                            className={`flex items-center space-x-3 p-5 font-poppins rounded-md ${feature.color} shadow-md w-64`}
                         >
                             {iconComponents[feature.icon]}
-                            <span className="text-gray-800 font-medium">
+                            <span className="text-gray-800 lg:text-lg font-medium">
                                 {feature.text}
                             </span>
                         </div>
