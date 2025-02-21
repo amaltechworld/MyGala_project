@@ -12,12 +12,15 @@ import C_Wedding from "./CardWedding.png";
 import DashImg1 from "./DashboardImage1.jpg";
 import DashImg2 from "./DashboardImage2.jpg";
 
+// Testimonial
+import T_background from "./TestimonialBackgroundImage.jpg";
+
 // Importing Footer Images
 import F_logo from "./footerlogo.png";
 
 
 export {
-    // Exporting Card Images
+    //  Card Images
     C_BabyShower,
     C_BachelorParty,
     C_Birthday,
@@ -27,11 +30,14 @@ export {
     C_NamingCeremony,
     C_Wedding,
 
-    // Exporting Dashboard Images
+    //  Dashboard Images
     DashImg1,
     DashImg2,
 
-    // Exporting Footer Images
+    // Testimonial Image
+    T_background,
+
+    //  Footer Images
     F_logo,
 };
 
