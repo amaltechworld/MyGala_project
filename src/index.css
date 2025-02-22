@@ -7,10 +7,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .underline-animation {
     position: relative;
     display: inline-block;
 }
+
+
 
 .underline-animation::after {
     content: '';

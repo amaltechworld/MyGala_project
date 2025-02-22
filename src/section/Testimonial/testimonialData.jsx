@@ -1,12 +1,12 @@
 
 export const testimonialData = [
     {
-        text: "Gifting & Registry",
+        text: "Gifts & Registry",
         color: "bg-red-100",
         icon: "Gift",
     },
     {
-        text: "Digital Invites",
+        text: "Personal Invites",
         color: "bg-yellow-100",
         icon: "MailOpen",
     },
@@ -16,7 +16,7 @@ export const testimonialData = [
         icon: "MessageCircleMore",
     },
     {
-        text: "Closed Group Chat",
+        text: "Group Messaging",
         color: "bg-green-100",
         icon: "Users",
     },

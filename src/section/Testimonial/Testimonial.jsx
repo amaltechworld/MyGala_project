@@ -1,4 +1,4 @@
-//  T_GroupSvg, T_InvitesSvg, T_commentsSvg,
+
 import {
     T_GiftSvg,
     T_GroupSvg,
@@ -6,7 +6,6 @@ import {
     T_commentsSvg,
 } from "../../assets/icons/index";
 
-// import { Gift, Users, MailOpen, MessageCircleMore } from "lucide-react";
 import { testimonialData } from "./testimonialData";
 import { Apple, PlayStore } from "../../assets/badge/index";
 import { T_background } from "../../assets/images";
@@ -17,28 +16,28 @@ const iconComponents = {
         <img
             src={T_GiftSvg}
             alt="Gift Icon"
-            className="h-6 w-6 lg:h-10 lg:w-10"
+            className="h-5 w-5 md:h-6 md:w-6 lg:h-10 lg:w-10 "
         />
     ),
     MailOpen: (
         <img
             src={T_GroupSvg}
             alt="Group Icon"
-            className="h-6 w-6 lg:h-9 lg:w-9"
+            className="h-5 w-5 md:h-6 md:w-6 lg:h-9 lg:w-9"
         />
     ),
     MessageCircleMore: (
         <img
             src={T_InvitesSvg}
             alt="Invites Icon"
-            className="h-6 w-6 lg:h-9 lg:w-9"
+            className="h-5 w-5 md:h-6 md:w-6 lg:h-9 lg:w-9"
         />
     ),
     Users: (
         <img
             src={T_commentsSvg}
             alt="Comments Icon"
-            className="h-6 w-6 lg:h-9 lg:w-9"
+            className="h-5 w-5 md:h-6 md:w-6 lg:h-9 lg:w-9"
         />
     ),
 };
@@ -67,7 +66,7 @@ const Testimonial = () => {
                             {testimonialData.map((feature, index) => (
                                 <div
                                     key={index}
-                                    className={`flex items-center space-x-3 p-4 font-poppins rounded-md ${feature.color} shadow-md w-full`}
+                                    className={`flex items-center space-x-3 py-4 px-2 m-1 font-poppins rounded-md ${feature.color} shadow-md w-full`}
                                 >
                                     {iconComponents[feature.icon]}
                                     <span className="text-gray-800 text-xs md:text-base font-medium">
