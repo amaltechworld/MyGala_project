@@ -1,7 +1,7 @@
 import Card from "./card/Card";
 import Footer from "./footer/Footer";
 import Hero from "./Hero";
-import PhotoGallery from "./HorizontalGallery";
+import HorizontalScrollGallery from "./HorizontalScrollGallery";
 import DashboardStats from "./DashboardStats";
 import Newsletter from "./newsletter/NewsLetter";
 import Testimonial from "./Testimonial/Testimonial";
@@ -11,7 +11,7 @@ export {
     Card,
     Footer,
     Hero,
-    PhotoGallery,
+    HorizontalScrollGallery,
     DashboardStats,
     Newsletter,
     Testimonial,

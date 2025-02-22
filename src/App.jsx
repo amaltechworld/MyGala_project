@@ -4,7 +4,7 @@ import {
     Card,
     VendorGallery,
     Testimonial,
-    HorizontalGallery,
+    HorizontalScrollGallery,
     DashboardStats,
     Newsletter,
     Footer,
@@ -37,7 +37,7 @@ export default function App() {
             </section>
             <section>
                 <ErrorBoundary>
-                    <HorizontalGallery />
+                    <HorizontalScrollGallery />
                 </ErrorBoundary>
             </section>
             <section>
@@ -59,13 +59,4 @@ export default function App() {
     );
 }
 
-//header
-//hero
-//card
-//vendor Gallery
-//testimonial
-//app
-//photo Gallery
-//recent
-//subscribe
-//footer
+
