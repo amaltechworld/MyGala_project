@@ -1,7 +1,10 @@
+// import { D_appDownloadsSvg } from "../assets/icons/index"
 
 const Hero = () => {
   return (
-    <div></div>
+    <div>
+     {/* <img src={D_appDownloadsSvg} alt="" /> */}
+    </div>
   )
 }
 

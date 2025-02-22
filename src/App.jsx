@@ -4,39 +4,56 @@ import {
     Card,
     VendorGallery,
     Testimonial,
-    PhotoGallery,
+    HorizontalGallery,
     DashboardStats,
     Newsletter,
     Footer,
 } from "./section";
+import ErrorBoundary from "./components/ErrorBoundary";
 
 export default function App() {
     return (
         <main className="relative">
             {/* <Nav /> */}
             <section>
-                <Hero />
+                <ErrorBoundary>
+                    <Hero />
+                </ErrorBoundary>
             </section>
             <section>
-                <Card />
+                <ErrorBoundary>
+                    <Card />
+                </ErrorBoundary>
             </section>
             <section>
-                <VendorGallery />
+                <ErrorBoundary>
+                    <VendorGallery />
+                </ErrorBoundary>
             </section>
             <section>
-                <Testimonial />
+                <ErrorBoundary>
+                    <Testimonial />
+                </ErrorBoundary>
             </section>
             <section>
-                <PhotoGallery />
+                <ErrorBoundary>
+                    <HorizontalGallery />
+                </ErrorBoundary>
             </section>
             <section>
-                <DashboardStats />
+                <ErrorBoundary>
+                    <DashboardStats />
+                </ErrorBoundary>
             </section>
             <section>
-                <Newsletter />
+                <ErrorBoundary>
+                    <Newsletter />
+                </ErrorBoundary>
             </section>
             <section>
-                <Footer />
+                <ErrorBoundary>
+                    <Footer />
+                </ErrorBoundary>
             </section>
         </main>
     );

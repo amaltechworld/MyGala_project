@@ -1,7 +1,7 @@
-
+// import { D_appDownloadsSvg, D_curatedVendorSvg, D_siteVisitsSvg } from "assets/Icons";
 import { DashImg1, DashImg2 } from "../assets/images";
 import {Monitor, Download, Store, ArrowRight } from "lucide-react"; 
-// import { BrowserIcon, MobileDownloadIcon } from "../assets/svg/index.jsx";
+
 
 const DashboardStats = () => {
     return (
