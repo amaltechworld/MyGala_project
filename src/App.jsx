@@ -2,7 +2,7 @@
 import {
     Hero,
     Card,
-    VendorGallery,
+    CustomerComment,
     Testimonial,
     HorizontalScrollGallery,
     DashboardStats,
@@ -27,7 +27,7 @@ export default function App() {
             </section>
             <section>
                 <ErrorBoundary>
-                    <VendorGallery />
+                    <CustomerComment />
                 </ErrorBoundary>
             </section>
             <section>

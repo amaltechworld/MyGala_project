@@ -156,13 +156,14 @@ const HorizontalScrollGallery = () => {
             <div className="relative w-full h-[600px] overflow-hidden">
                 <div
                     ref={galleryRef}
-                    className="flex gap-10 w-[300%] absolute "
+                    className="flex gap-5 w-[300%] absolute "
                     style={{ alignItems: "center", willChange: "transform" }}
                 >
                     {[...images, ...images].map((src, index) => {
                         const randomHeight = 200 + Math.random() * 150; // Random height
                         const randomTop =
                             Math.random() * (625 - randomHeight - 50); // Random Y position
+                            const gap = 20;
 
                         return (
                             <div
@@ -170,15 +171,15 @@ const HorizontalScrollGallery = () => {
                                 className="absolute"
                                 style={{
                                     top: `${randomTop}px`,
-                                    left: `${index * 200}px`,
-                                    width: "200px",
+                                    left: `${index * (300 + gap)}px`,
+                                    width: "300px",
                                     height: `${randomHeight}px`,
                                 }}
                             >
                                 <img
                                     src={src}
                                     alt={`gallery-${index}`}
-                                    className="object-cover rounded-md shadow-md border border-white"
+                                    className="object-cover rounded-md shadow-md border  border-white"
                                     style={{
                                         width: "100%",
                                         height: "100%",

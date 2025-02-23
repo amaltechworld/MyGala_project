@@ -5,7 +5,7 @@ import HorizontalScrollGallery from "./HorizontalScrollGallery";
 import DashboardStats from "./DashboardStats";
 import Newsletter from "./newsletter/NewsLetter";
 import Testimonial from "./Testimonial/Testimonial";
-import VendorGallery from "./VendorGallery";
+import CustomerComment from "./customerComment/CustomerComment";
 
 export {
     Card,
@@ -15,7 +15,7 @@ export {
     DashboardStats,
     Newsletter,
     Testimonial,
-    VendorGallery,
+    CustomerComment,
 };
 
 // need to find the error.
