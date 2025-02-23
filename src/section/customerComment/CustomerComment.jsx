@@ -1,23 +1,25 @@
-import {useState} from "react";
+import { useState } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { comments } from "./CustomerData";
 import { Cu_Co_backgroundImg } from "../../assets/images/index";
-
 
 const CustomerComment = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const handlePrevClick = () => {
-        setCurrentIndex((prevIndex) => (prevIndex > 0 ? prevIndex -1 : comments.length - 1));
-    }
+        setCurrentIndex((prevIndex) =>
+            prevIndex > 0 ? prevIndex - 1 : comments.length - 1
+        );
+    };
 
     const handleNextClick = () => {
-        setCurrentIndex((prevIndex) => (prevIndex < comments.length - 1 ? prevIndex + 1 : 0));
-    }
-
+        setCurrentIndex((prevIndex) =>
+            prevIndex < comments.length - 1 ? prevIndex + 1 : 0
+        );
+    };
 
     return (
-        <section className="min-h-screen bg-[#fdfafa] py-20">
+        <section className="hidden lg:block min-h-screen bg-[#fdfafa] py-20">
             {/* Main Container //px-4*/}
             <div className="container mx-0 ">
                 {/* Top Section with Image and Heading */}
@@ -31,8 +33,8 @@ const CustomerComment = () => {
                             }}
                         ></div>
 
-                        {/* comment container */}
-                        <div className="absolute bottom-[-20%] left-48 w-full xl:w-[228%] min-h-[90%] p-8  flex overflow-hidden hide-scrollbar">
+                        {/* comment container w-full*/}
+                        <div className="absolute bottom-[-20%] left-48 lg:w-[87vw] min-h-[90%] p-8  flex overflow-hidden hide-scrollbar">
                             <div
                                 className="flex transition-transform duration-500 gap-6"
                                 style={{
@@ -44,7 +46,7 @@ const CustomerComment = () => {
                                 {comments.map((comment, index) => (
                                     <div
                                         key={index}
-                                        className="w-[800px] bg-[#eff3dd] p-6 rounded-2xl shadow-md flex-shrink-0 relative"
+                                        className="w-[800px] bg-[#eff3dd] p-6 flex-shrink-0 border-style-solid border-[25px] border-[#fdfafa] rounded-none relative"
                                     >
                                         {/* Quote Icon */}
                                         <span className="text-4xl lg:text-5xl font-bold text-gray-800 block">
@@ -105,7 +107,11 @@ const CustomerComment = () => {
                 </div>
             </div>
         </section>
+
     );
 };
 
 export default CustomerComment;
+
+
+
