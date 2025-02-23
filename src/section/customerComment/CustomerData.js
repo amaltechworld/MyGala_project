@@ -6,7 +6,7 @@ export const comments = [
         image: "https://randomuser.me/api/portraits/women/79.jpg",
     },
     {
-        quote: "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
+        quote: "Lorem Ipsum is simply dummy text of the printing and typesetting industry...Lorem Ipsum is simply dummy text of the printing and typesetting industry...Lorem Ipsum is simply dummy text of the printing and typesetting industry...Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
         name: "Anshu Sharma",
         role: "Digital Marketing Manager",
         image: "https://randomuser.me/api/portraits/women/50.jpg",

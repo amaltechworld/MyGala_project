@@ -21,7 +21,7 @@ const CustomerComment = () => {
             {/* Main Container //px-4*/}
             <div className="container mx-0 ">
                 {/* Top Section with Image and Heading */}
-                <div className="flex flex-col lg:flex-row items-center gap-8 mb-16">
+                <div className="flex flex-col lg:flex-row justify-between items-start gap-8 mb-16">
                     {/* Left Image Section */}
                     <div className="lg:w-1/2 relative">
                         <div
@@ -32,7 +32,7 @@ const CustomerComment = () => {
                         ></div>
 
                         {/* comment container */}
-                        <div className="absolute bottom-[-20%] left-48 w-full lg:w-[229%] min-h-[90%] p-8  flex overflow-hidden hide-scrollbar">
+                        <div className="absolute bottom-[-20%] left-48 w-full xl:w-[228%] min-h-[90%] p-8  flex overflow-hidden hide-scrollbar">
                             <div
                                 className="flex transition-transform duration-500 gap-6"
                                 style={{
@@ -52,7 +52,7 @@ const CustomerComment = () => {
                                         </span>
 
                                         {/* Testimonial Text */}
-                                        <p className="text-gray-800 text-2xl font-poppins mb-8">
+                                        <p className="text-gray-800 text-2xl leading-relaxed font-poppins mb-8">
                                             {comment.quote}
                                         </p>
 
@@ -93,10 +93,9 @@ const CustomerComment = () => {
                             </button>
                         </div>
                     </div>
-
                     {/* Right Heading Section */}
-                    <div className="lg:w-1/2">
-                        <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
+                    <div className="lg:w-1/2 h-full flex items-start justify-start">
+                        <h2 className="text-4xl lg:text-5xl font-playfair font-bold text-gray-900 pt-10">
                             What Our{" "}
                             <span className="text-[#788247]">Customers</span>{" "}
                             Say
@@ -104,49 +103,9 @@ const CustomerComment = () => {
                         </h2>
                     </div>
                 </div>
-                {/* Testimonials Container */}
             </div>
         </section>
     );
 };
 
 export default CustomerComment;
-
-// {
-//     /* Testimonials Container */
-// }
-// <div className="flex flex-col lg:flex-row gap-6 overflow-x-auto absolute">
-//     {comments.map((comment, index) => (
-//         <div
-//             key={index}
-//             className="bg-[#eff3dd] p-8 rounded-2xl shadow-md lg:w-1/2 flex-shrink-0"
-//         >
-//             {/* Quote Icon */}
-//             <span className="text-4xl font-bold text-gray-800 block mb-4">
-//                 &quot;
-//             </span>
-
-//             {/* Testimonial Text */}
-//             <p className="text-gray-700 text-lg mb-8">
-//                 {comment.quote}
-//             </p>
-
-//             {/* User Info */}
-//             <div className="flex items-center gap-4">
-//                 <img
-//                     src={comment.image}
-//                     alt={comment.name}
-//                     className="w-14 h-14 rounded-full object-cover"
-//                 />
-//                 <div>
-//                     <p className="font-bold text-gray-900 text-lg">
-//                         {comment.name}
-//                     </p>
-//                     <p className="text-gray-600">
-//                         {comment.role}
-//                     </p>
-//                 </div>
-//             </div>
-//         </div>
-//     ))}
-// </div>;
