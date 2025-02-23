@@ -12,8 +12,11 @@ import C_Wedding from "./CardWedding.png";
 import DashImg1 from "./DashboardImage1.jpg";
 import DashImg2 from "./DashboardImage2.jpg";
 
+// CustomerComment
+import Cu_Co_backgroundImg from "./CustomerComment_bgImg.jpg";
+
 // Testimonial
-import T_background from "./TestimonialBackgroundImage.jpg";
+import T_background from "./Testimonial_bg_Img.jpg";
 
 //HorizontalGallery
 import H_GalleryImg1 from "./Horizontal_G_img1.webp";
@@ -50,6 +53,9 @@ export {
     //  Dashboard Images
     DashImg1,
     DashImg2,
+
+    // CustomerComment
+    Cu_Co_backgroundImg,
 
     // Testimonial Image
     T_background,
