@@ -1,6 +1,6 @@
 
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useSwipeable } from "react-swipeable";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { comments } from "./CustomerData";
@@ -8,6 +8,7 @@ import { Cu_Co_backgroundImg } from "../../assets/images/index";
 
 const CustomerComment = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [cardWidth, setCardWidth] = useState(0);
 
     //Arrow button
     const handlePrevClick = () => {
@@ -21,14 +22,36 @@ const CustomerComment = () => {
             prevIndex < comments.length - 1 ? prevIndex + 1 : 0
         );
     };
-
     // mobile swipe
     const handlers = useSwipeable({
         onSwipedLeft: handleNextClick,
         onSwipedRight: handlePrevClick,
         preventDefaultTouchmoveEvent: true,
-        trackMouse:true,
+        trackMouse: true,
     });
+
+    // smooth scrolling as per the screen
+
+    useEffect(() => {
+        const updateCardWidth = () => {
+            const vw = Math.max(
+                document.documentElement.clientWidth || 0,
+                window.innerWidth || 0
+            );
+            const isSmallScreen = vw < 768;
+            const calculatedWidth = isSmallScreen ? 0.8 * vw : 600;
+            setCardWidth(calculatedWidth);
+        };
+
+        updateCardWidth();
+        window.addEventListener("resize", updateCardWidth);
+
+        return () => {
+            window.removeEventListener("resize", updateCardWidth);
+        };
+    }, []);
+
+    const gapWidth = 24;
 
     return (
         <>
@@ -118,10 +141,10 @@ const CustomerComment = () => {
             </div>
 
             {/* Mobile View */}
-            <div className="block lg:hidden min-h-screen bg-[#fdfafa] py-20 relative">
+            <div className="block lg:hidden min-h-[75vh] flex-col justify-center  bg-[#fdfafa] pt-10 relative overflow-hidden">
                 {/* Main Container */}
                 <div className="container mx-auto ">
-                    {/* Heading Overlay absolute  left-1/2 transform -translate-x-1/2 -translate-y-1/2 */}
+                    {/* Heading */}
                     <h2
                         className="
                         text-black text-xl sm:text-4xl  font-bold text-center px-4 py-2 mb-4 sm:mb-6 rounded-lg"
@@ -139,22 +162,22 @@ const CustomerComment = () => {
                     >
                         {/* Comment Slider Section */}
                         <div
-                            className="w-full overflow-hidden absolute top-1/3 left-0 px-4"
+                            className="w-full overflow-hidden absolute top-1/3 sm:top-2/3 left-0 px-4 pb-10"
                             {...handlers}
                         >
-                            {/* sm:auto-cols-[60vw] md:auto-cols-[80vw] */}
+                            {/* auto-cols-[80vw] */}
                             <div
-                                className="grid grid-flow-col auto-cols-[80vw]  gap-6 transition-transform duration-500"
+                                className="grid grid-flow-col auto-cols-[min(80vw,600px)] gap-6 transition-transform duration-500 scroll-smooth snap-x snap-madatory"
                                 style={{
                                     transform: `translateX(-${
-                                        currentIndex * 92
-                                    }%)`, // Keeps movement flexible
+                                        currentIndex * (cardWidth + gapWidth)
+                                    }px)`, // Keeps movement flexible
                                 }}
                             >
                                 {comments.map((comment, index) => (
                                     <div
                                         key={index}
-                                        className="bg-[#eff3dd] p-6 rounded-2xl shadow-md relative"
+                                        className="bg-[#eff3dd] p-6 rounded-2xl shadow-md relative max-w-[90vw] snap-center"
                                     >
                                         {/* Quote Icon */}
                                         <span className="text-3xl sm:text-4xl font-bold text-gray-800 block">
