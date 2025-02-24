@@ -7,6 +7,7 @@ import Newsletter from "./newsletter/NewsLetter";
 import Testimonial from "./Testimonial/Testimonial";
 import CustomerComment from "./customerComment/CustomerComment";
 
+
 export {
     Card,
     Footer,
@@ -16,6 +17,8 @@ export {
     Newsletter,
     Testimonial,
     CustomerComment,
+
+    
 };
 
 // need to find the error.

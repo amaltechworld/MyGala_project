@@ -8,6 +8,7 @@ import {
     DashboardStats,
     Newsletter,
     Footer,
+    
 } from "./section";
 import ErrorBoundary from "./components/ErrorBoundary";
 
@@ -55,6 +56,7 @@ export default function App() {
                     <Footer />
                 </ErrorBoundary>
             </section>
+
         </main>
     );
 }

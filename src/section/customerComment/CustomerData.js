@@ -1,6 +1,6 @@
 export const comments = [
     {
-        quote: "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
+        quote: "Should limit the content (comment). next comment would be the example. i have set width and height fixed.",
         name: "Shilpi Jaiswal",
         role: "Business Analyst",
         image: "https://randomuser.me/api/portraits/women/79.jpg",

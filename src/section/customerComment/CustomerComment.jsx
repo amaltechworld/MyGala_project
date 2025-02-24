@@ -22,7 +22,7 @@ const CustomerComment = () => {
         );
     };
 
-    //mobile swipe
+    // mobile swipe
     const handlers = useSwipeable({
         onSwipedLeft: handleNextClick,
         onSwipedRight: handlePrevClick,
@@ -33,7 +33,7 @@ const CustomerComment = () => {
     return (
         <>
             {/* Desktop View */}
-            <section className="hidden lg:block min-h-screen bg-[#fdfafa] py-20">
+            <div className="hidden lg:block min-h-screen bg-[#fdfafa] py-20">
                 <div className="container mx-auto">
                     <div className="flex flex-col lg:flex-row justify-between items-start gap-8 mb-16">
                         {/* Left Image Section */}
@@ -49,7 +49,7 @@ const CustomerComment = () => {
                                     className="flex transition-transform duration-500 gap-6"
                                     style={{
                                         transform: `translateX(-${
-                                            currentIndex * 800
+                                            currentIndex * 820
                                         }px)`,
                                     }}
                                 >
@@ -58,18 +58,22 @@ const CustomerComment = () => {
                                             key={index}
                                             className="w-[800px] bg-[#eff3dd] p-6 flex-shrink-0 border-[25px] border-[#fdfafa] rounded-none relative"
                                         >
+                                            {/* Quote Icon */}
                                             <span className="text-4xl lg:text-5xl font-bold text-gray-800 block">
                                                 &ldquo;
                                             </span>
+                                            {/* paragaraph text */}
                                             <p className="text-gray-800 text-2xl leading-relaxed font-poppins mb-8">
                                                 {comment.quote}
                                             </p>
+                                            {/* user info */}
                                             <div className="flex items-center gap-4 absolute bottom-6 left-6">
                                                 <img
                                                     src={comment.image}
                                                     alt={comment.name}
                                                     className="w-14 h-14 lg:w-24 lg:h-24 rounded-full object-cover"
                                                 />
+
                                                 <div>
                                                     <p className="font-bold text-gray-900 text-lg font-playfair">
                                                         {comment.name}
@@ -111,16 +115,16 @@ const CustomerComment = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
 
             {/* Mobile View */}
-            <section className="block lg:hidden min-h-screen bg-[#fdfafa] py-20 relative">
+            <div className="block lg:hidden min-h-screen bg-[#fdfafa] py-20 relative">
                 {/* Main Container */}
-                <div className="container mx-auto px-4">
+                <div className="container mx-auto ">
                     {/* Heading Overlay absolute  left-1/2 transform -translate-x-1/2 -translate-y-1/2 */}
                     <h2
                         className="
-                        text-black text-3xl sm:text-4xl md:text-5xl font-bold text-center px-4 py-2 rounded-lg"
+                        text-black text-xl sm:text-4xl  font-bold text-center px-4 py-2 mb-4 sm:mb-6 rounded-lg"
                     >
                         What Our{" "}
                         <span className="text-[#788247]">Customers</span> Say
@@ -128,42 +132,46 @@ const CustomerComment = () => {
                     </h2>
                     {/* Top Section with Background Image and Heading */}
                     <div
-                        className="relative w-full h-[400px] md:h-[500px] lg:h-[700px] bg-cover bg-center rounded-md"
+                        className="relative w-full h-[400px] md:h-[500px]  bg-cover bg-center rounded-md"
                         style={{
                             backgroundImage: `url(${Cu_Co_backgroundImg})`,
                         }}
                     >
                         {/* Comment Slider Section */}
-                        <div className="w-11/12 overflow-hidden absolute top-1/3 left-10" {...handlers}>
+                        <div
+                            className="w-full overflow-hidden absolute top-1/3 left-0 px-4"
+                            {...handlers}
+                        >
+                            {/* sm:auto-cols-[60vw] md:auto-cols-[80vw] */}
                             <div
-                                className="flex transition-transform duration-500 gap-6"
+                                className="grid grid-flow-col auto-cols-[80vw]  gap-6 transition-transform duration-500"
                                 style={{
                                     transform: `translateX(-${
-                                        currentIndex * 76
-                                    }%)`,
+                                        currentIndex * 92
+                                    }%)`, // Keeps movement flexible
                                 }}
                             >
                                 {comments.map((comment, index) => (
                                     <div
                                         key={index}
-                                        className=" w-[70vw] md:w-[60vw]  bg-[#eff3dd] p-6 rounded-2xl shadow-md flex-shrink-0"
+                                        className="bg-[#eff3dd] p-6 rounded-2xl shadow-md relative"
                                     >
                                         {/* Quote Icon */}
-                                        <span className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 block">
+                                        <span className="text-3xl sm:text-4xl font-bold text-gray-800 block">
                                             &ldquo;
                                         </span>
 
-                                        {/* Testimonial Text */}
-                                        <p className="text-gray-800 text-lg sm:text-2xl leading-relaxed font-poppins mb-8">
+                                        {/* paragraph Text */}
+                                        <p className="text-gray-800 text-lg sm:text-xl leading-relaxed font-poppins mb-8">
                                             {comment.quote}
                                         </p>
 
                                         {/* User Info */}
-                                        <div className="flex items-center gap-4">
+                                        <div className="flex items-center gap-4 absolute bottom-6 left-6">
                                             <img
                                                 src={comment.image}
                                                 alt={comment.name}
-                                                className="w-12 h-12 sm:w-16 sm:h-16 lg:w-24 lg:h-24 rounded-full object-cover"
+                                                className="w-12 h-12 sm:w-16 sm:h-16 rounded-full object-cover"
                                             />
                                             <div>
                                                 <p className="font-bold text-gray-900 text-lg font-playfair">
@@ -174,15 +182,16 @@ const CustomerComment = () => {
                                                 </p>
                                             </div>
                                         </div>
+                                        {/* info end */}
                                     </div>
                                 ))}
                             </div>
                         </div>
+
+                        {/* comment end */}
                     </div>
-
-
                 </div>
-            </section>
+            </div>
         </>
     );
 };
@@ -190,22 +199,3 @@ const CustomerComment = () => {
 export default CustomerComment;
 
 
-
-                    //     {/* Comment Container */}
-
-                    //     {/* Navigation Buttons */}
-                    //     <div className="flex gap-4 mt-16">
-                    //         <button
-                    //             className="p-3 bg-white rounded-lg shadow-lg hover:bg-gray-50 transition-colors"
-                    //             onClick={handlePrevClick}
-                    //         >
-                    //             <ArrowLeft className="w-5 h-5 text-gray-700" />
-                    //         </button>
-                    //         <button
-                    //             className="p-3 bg-white rounded-lg shadow-lg hover:bg-gray-50 transition-colors"
-                    //             onClick={handleNextClick}
-                    //         >
-                    //             <ArrowRight className="w-5 h-5 text-gray-700" />
-                    //         </button>
-                    //     </div>
-                    // </div>;
