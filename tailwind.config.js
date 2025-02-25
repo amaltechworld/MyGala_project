@@ -8,9 +8,8 @@ export default {
         extend: {
             colors: {
                 olive: {
-                    600: "#6B8E23", 
+                    600: "#6B8E23",
                 },
-                
             },
             fontFamily: {
                 playfair: ["Playfair Display", "serif"],
@@ -18,7 +17,7 @@ export default {
             },
         },
     },
+
     plugins: [daisyui],
-
-
 };
+//playfair //poppins

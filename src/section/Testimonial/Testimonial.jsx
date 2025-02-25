@@ -21,21 +21,21 @@ const iconComponents = {
     ),
     MailOpen: (
         <img
-            src={T_GroupSvg}
+            src={T_InvitesSvg}
             alt="Group Icon"
             className="h-5 w-5 md:h-6 md:w-6 lg:h-9 lg:w-9"
         />
     ),
     MessageCircleMore: (
         <img
-            src={T_InvitesSvg}
+            src={T_commentsSvg}
             alt="Invites Icon"
             className="h-5 w-5 md:h-6 md:w-6 lg:h-9 lg:w-9"
         />
     ),
     Users: (
         <img
-            src={T_commentsSvg}
+            src={T_GroupSvg}
             alt="Comments Icon"
             className="h-5 w-5 md:h-6 md:w-6 lg:h-9 lg:w-9"
         />
@@ -44,7 +44,7 @@ const iconComponents = {
 
 const Testimonial = () => {
     return (
-        <div className="flex flex-col lg:flex-row items-center justify-center lg:min-h-screen bg-[#fdfafa]  lg:px-32 py-20 mx-0">
+        <div className="flex flex-col lg:flex-row items-center justify-center lg:min-h-screen bg-[#fdfafa]  lg:pl-32 py-20 mx-0">
             {/* Left Section */}
             <div className="md:w-3/4 lg:w-1/2 text-center lg:text-left flex flex-col lg:flex-none">
                 {/* Heading */}
@@ -111,20 +111,22 @@ const Testimonial = () => {
             </div>
 
             {/* Right Section */}
-            <div className="hidden lg:flex relative  lg:w-1/2 lg:justify-center lg:mt-0 h-screen">
+            <div className="hidden lg:flex lg:w-full lg:justify-center  h-screen relative">
                 <div
                     style={{ backgroundImage: `url(${T_background})` }}
-                    className="w-full max-w-2xl h-[80vh] md:rounded-lg bg-cover bg-center relative"
+                    className="w-full max- h-full md:rounded-lg bg-cover bg-center absolute"
                 ></div>
 
                 {/* Feature Cards Overlay */}
-                <div className="absolute top-32 left-1/2 transform -translate-x-1/2 flex flex-col gap-1   ">
+                <div className="absolute inset-0 flex flex-col justify-center items-center gap-1 p-8">
                     {testimonialData.map((feature, index) => (
                         <div
                             key={index}
-                            className={`flex items-center space-x-3 p-6 m-6 font-poppins rounded-md ${feature.color} shadow-md w-full`}
+                            className={`flex items-center space-x-3 p-9 m-6 font-poppins rounded-md ${feature.color} shadow-md w-[80%] max-w-[400px]`}
                         >
-                            {iconComponents[feature.icon]}
+                            <div className="flex-shrink-0">
+                                {iconComponents[feature.icon]}
+                            </div>
                             <span className="text-gray-800 lg:text-lg font-medium">
                                 {feature.text}
                             </span>

@@ -2,7 +2,7 @@
 
 
 import { useState } from "react";
-import { Send, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 import NewsIcons from "./NewsIcons";
 import { footerData } from "../footer/footerData";
 
@@ -19,20 +19,20 @@ const Newsletter = () => {
         <section className="py-20 px-4 bg-[#f9f6f6]">
             <div className="max-w-4xl mx-auto ">
                 {/* Heading */}
-                <h2 className="text-2xl md:text-4xl lg:text-5xl text-[#1f1f1f] font-bold text-center mb-6 lg:leading-tight hidden md:block">
+                <h2 className="text-2xl md:text-4xl lg:text-5xl text-[#1f1f1f] font-playfair font-bold text-center mb-6 lg:leading-tight hidden md:block">
                     Subscribe to Our Newsletter for Event
                     <br />
                     Planning Insights
                 </h2>
 
-                <h2 className="text-2xl md:text-4xl lg:text-5xl text-[#1f1f1f] font-bold text-center mb-6 block md:hidden">
+                <h2 className="text-2xl md:text-4xl lg:text-5xl text-[#1f1f1f] font-playfair font-bold text-center mb-6 block md:hidden">
                     Subscribe to Our Newsletter
                     <br />
                     for Event Planning Insights
                 </h2>
 
                 {/* Description */}
-                <p className="text-[#6d6d6d] text-lg md:text-xl lg:text-2xl font-medium mb-12 text-center lg:leading-relaxed">
+                <p className="text-[#6d6d6d] text-lg md:text-xl lg:text-2xl font-poppins font-medium mb-12 text-center lg:leading-relaxed">
                     Be the first to discover trends, inspirations, and special
                     offers as we bring the world of event planning directly to
                     your inbox
@@ -58,7 +58,7 @@ const Newsletter = () => {
                             className="absolute right-2 inline-flex items-center text-white px-4 py-3 bg-[#11235a] rounded-md hover:bg-[#2d589e] focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
                         >
                             <span className="mr-2">Subscribe</span>
-                            <Send size={16} />
+                            
                         </button>
                     </div>
                 </form>

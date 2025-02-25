@@ -5,7 +5,7 @@ import {Monitor, Download, Store, ArrowRight } from "lucide-react";
 
 const DashboardStats = () => {
     return (
-        <section className="bg-white lg:h-screen flex items-center justify-center ">
+        <section className="bg-white lg:h-screen flex items-center justify-center font-poppins">
             <div className="container mx-auto p-6">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 rounded-2xl overflow-hidden  lg:min-h-[800px] ">
                     {/* Stats Section */}
