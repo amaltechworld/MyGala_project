@@ -1,3 +1,7 @@
+//importing MyGala_logo
+// import MyGala_Logo from "./MyGala_logo.png";
+import MyGalaNav_logo from "./MyGalaNav_logo.png";
+
 // Importing Card Images
 import C_BabyShower from "./CardBabyShower.jpg";
 import C_BachelorParty from "./CardBachelorParty.jpg";
@@ -40,6 +44,9 @@ import F_logo from "./footerlogo.png";
 
 
 export {
+    // MyGala navbar logo
+    MyGalaNav_logo,
+
     //  Card Images
     C_BabyShower,
     C_BachelorParty,

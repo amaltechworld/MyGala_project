@@ -6,6 +6,7 @@ import DashboardStats from "./DashboardStats";
 import Newsletter from "./newsletter/NewsLetter";
 import Testimonial from "./Testimonial/Testimonial";
 import CustomerComment from "./customerComment/CustomerComment";
+import Navbar from "./navbar/Navbar";
 
 
 export {
@@ -17,8 +18,7 @@ export {
     Newsletter,
     Testimonial,
     CustomerComment,
-
+Navbar
     
 };
 
-// need to find the error.

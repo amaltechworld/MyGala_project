@@ -44,7 +44,7 @@ const iconComponents = {
 
 const Testimonial = () => {
     return (
-        <div className="flex flex-col lg:flex-row items-center justify-center lg:min-h-screen bg-[#fdfafa]  lg:pl-32 py-20 mx-0">
+        <div className="flex flex-col lg:flex-row items-center justify-center lg:min-h-screen bg-[#fdfafa]  lg:pl-32 py-5 sm:py-10 lg:py-20 mx-0">
             {/* Left Section */}
             <div className="md:w-3/4 lg:w-1/2 text-center lg:text-left flex flex-col lg:flex-none">
                 {/* Heading */}

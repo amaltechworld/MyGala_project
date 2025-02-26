@@ -1,12 +1,13 @@
 // import Nav from "./components/navbar/Nav";
 import {
+     Navbar,
     Hero,
     Card,
     CustomerComment,
     Testimonial,
     HorizontalScrollGallery,
     DashboardStats,
-    Newsletter,
+     Newsletter,
     Footer,
     
 } from "./section";
@@ -15,7 +16,11 @@ import ErrorBoundary from "./components/ErrorBoundary";
 export default function App() {
     return (
         <main className="relative">
-            {/* <Nav /> */}
+            <section>
+                <ErrorBoundary>
+                    <Navbar />
+                </ErrorBoundary>
+            </section>
             <section>
                 <ErrorBoundary>
                     <Hero />
@@ -56,7 +61,6 @@ export default function App() {
                     <Footer />
                 </ErrorBoundary>
             </section>
-
         </main>
     );
 }

@@ -10,14 +10,14 @@ const CustomerComment = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [cardWidth, setCardWidth] = useState(0);
 
-    //Arrow button
-    const handlePrevClick = () => {
+    //Arrow button 
+    const handleNextClick = () => {
         setCurrentIndex(
             (prevIndex) => Math.min(prevIndex + 1, comments.length - 1) // Stop at last card
         );
     };
 
-    const handleNextClick = () => {
+    const handlePrevClick = () => {
         setCurrentIndex(
             (prevIndex) => Math.max(prevIndex - 1, 0) // Stop at first card
         );
@@ -50,7 +50,7 @@ const CustomerComment = () => {
     }, []);
 
 
-    // const gapWidth = 24; //gap-6
+    const gapWidth = 24; //gap-6
 
     return (
         <>
@@ -111,15 +111,15 @@ const CustomerComment = () => {
                             </div>
                         </div>
                         {/* Arrow button navigation */}
-                        <div className="absolute left-0 bottom-8 flex gap-2 ml-8">
+                        <div className="absolute left-0 -bottom-10 flex gap-2 ml-8">
                             <button
-                                className="p-3 bg-white rounded-lg shadow-lg hover:bg-gray-50 transition-colors"
+                                className="p-3 bg-[#f1f1f1] rounded-lg shadow-lg hover:bg-gray-50 transition-colors"
                                 onClick={handlePrevClick}
                             >
                                 <ArrowLeft className="w-5 h-5 text-gray-700" />
                             </button>
                             <button
-                                className="p-3 bg-white rounded-lg shadow-lg hover:bg-gray-50 transition-colors"
+                                className="p-3 bg-[#f1f1f1] rounded-lg shadow-lg hover:bg-gray-50 transition-colors"
                                 onClick={handleNextClick}
                             >
                                 <ArrowRight className="w-5 h-5 text-gray-700" />
@@ -151,31 +151,30 @@ const CustomerComment = () => {
                         <span className="text-[#788247]">Customers</span> Say
                         About Us
                     </h2>
-                    {/* Top Section with Background Image and Heading */}
+                    {/* Top Section with Background Image and Heading md:h-[500px]*/}
                     <div
-                        className="relative w-full h-[400px] md:h-[500px]  bg-cover bg-center rounded-md"
+                        className="relative w-full h-[50vh] bg-cover bg-center rounded-md"
                         style={{
                             backgroundImage: `url(${Cu_Co_backgroundImg})`,
                         }}
                     >
                         {/* Comment Slider Section */}
                         <div
-                            className="w-full overflowx-x-hidden absolute top-1/3 sm:top-2/3 left-0 px-4 pb-10"
+                            className="w-full overflow-x-hidden absolute top-1/3 sm:top-2/3 left-0 px-4 pb-10"
                             {...handlers}
                         >
-                            {/* auto-cols-[80vw] */}
                             <div
                                 className="grid grid-flow-col auto-cols-[min(80vw,600px)] gap-6 transition-transform duration-500 scroll-smooth snap-x snap-madatory"
                                 style={{
                                     transform: `translateX(-${
-                                        currentIndex * cardWidth
+                                        currentIndex * (cardWidth + gapWidth)
                                     }px)`, // Keeps movement flexible
                                 }}
                             >
                                 {comments.map((comment, index) => (
                                     <div
                                         key={index}
-                                        className="bg-[#eff3dd] p-6 rounded-2xl shadow-md relative max-w-[90vw] snap-center"
+                                        className="bg-[#eff3dd] p-6 rounded-2xl shadow-md relative max-w-[90vw] min-h-[30vh] max-h-[44vh] snap-center"
                                     >
                                         {/* Quote Icon */}
                                         <span className="text-3xl sm:text-4xl font-bold text-gray-800 block">

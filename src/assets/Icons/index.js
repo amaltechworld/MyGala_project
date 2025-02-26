@@ -1,3 +1,6 @@
+// Navbar
+import N_BagSvg from "./NavVendorBag.svg";
+
 //dashboardStats
 import  D_appDownloadsSvg  from "./DashboardAppDownloads.svg";
 import  D_curatedVendorSvg from "./DashboardCuratedVendors.svg";
@@ -13,6 +16,9 @@ import  T_InvitesSvg  from "./TestimonialInvites.svg";
 // import occasionsSvg from "./occasions.svg";
 
 export {
+//navbar
+N_BagSvg,
+
     // dashboard
     D_appDownloadsSvg,
     D_curatedVendorSvg,
