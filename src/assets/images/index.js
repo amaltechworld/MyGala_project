@@ -1,6 +1,7 @@
-//importing MyGala_logo
-// import MyGala_Logo from "./MyGala_logo.png";
+//Navbar
 import MyGalaNav_logo from "./MyGalaNav_logo.png";
+import NavbarMobileIcon from "./NavbarMobileIcon.png";
+
 
 //Hero
 import HeroImg from "./HeroImg.webp";
@@ -48,8 +49,9 @@ import F_logo from "./footerlogo.png";
 
 
 export {
-    // MyGala navbar logo
+    // navbar 
     MyGalaNav_logo,
+    NavbarMobileIcon,
 
     // Hero
     HeroImg,

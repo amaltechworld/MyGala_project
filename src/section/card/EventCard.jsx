@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 // card component
 const EventCard = ({ title, description, image }) => {
     return (
-        <div className="bg-white text-center rounded-lg p-2 md:p-8 border-2 border-[#e4e0e0] hover:bg-[#959b71] hover:shadow-lg transition-shadow group md:min-h-[300px]">
+        <div className="bg-white text-center rounded-3xl p-2 md:p-8 border-2 border-[#e4e0e0] hover:bg-[#959b71] hover:shadow-lg transition-shadow group md:min-h-[300px]">
             <img
                 src={image}
                 alt={title}
