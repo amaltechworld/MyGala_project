@@ -17,6 +17,15 @@ import C_HouseWarming from "./CardHouseWarming.jpg";
 import C_NamingCeremony from "./CardNamingCeremony.jpg";
 import C_Wedding from "./CardWedding.png";
 
+// Exclusive Vendors
+import E_VendorImg1 from "./ExclusiveVendorImg1.avif";
+import E_VendorImg2 from "./ExclusiveVendorImg2.jpg";
+import E_VendorImg3 from "./ExclusiveVendorImg3.jpg";
+import E_VendorImg4 from "./ExclusiveVendorImg4.jpg";
+
+import E_VendorNavigation from "./ExclusiveVendorNavigation.png";
+import E_VendorRightArrow from "./ExclusiveVendorRightArrow.png";
+
 // Importing Dashboard Images
 import DashImg1 from "./DashboardImage1.jpg";
 import DashImg2 from "./DashboardImage2.jpg";
@@ -49,7 +58,7 @@ import F_logo from "./footerlogo.png";
 
 
 export {
-    // navbar 
+    // navbar
     MyGalaNav_logo,
     NavbarMobileIcon,
 
@@ -66,6 +75,15 @@ export {
     C_HouseWarming,
     C_NamingCeremony,
     C_Wedding,
+
+    // Exclusive Vendor
+    E_VendorImg1,
+    E_VendorImg2,
+    E_VendorImg3,
+    E_VendorImg4,
+
+    E_VendorNavigation,
+    E_VendorRightArrow,
 
     //  Dashboard Images
     DashImg1,

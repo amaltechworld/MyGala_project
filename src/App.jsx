@@ -1,15 +1,15 @@
 // import Nav from "./components/navbar/Nav";
 import {
-     Navbar,
+    Navbar,
     Hero,
     Card,
+    ExclusiveVendors,
     CustomerComment,
     Testimonial,
     HorizontalScrollGallery,
     DashboardStats,
-     Newsletter,
+    Newsletter,
     Footer,
-    
 } from "./section";
 import ErrorBoundary from "./components/ErrorBoundary";
 
@@ -29,6 +29,11 @@ export default function App() {
             <section>
                 <ErrorBoundary>
                     <Card />
+                </ErrorBoundary>
+            </section>
+            <section>
+                <ErrorBoundary>
+                    <ExclusiveVendors />
                 </ErrorBoundary>
             </section>
             <section>

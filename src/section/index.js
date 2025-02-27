@@ -7,6 +7,7 @@ import Newsletter from "./newsletter/NewsLetter";
 import Testimonial from "./Testimonial/Testimonial";
 import CustomerComment from "./customerComment/CustomerComment";
 import Navbar from "./navbar/Navbar";
+import ExclusiveVendors from "./exclusiveVendors/ExclusiveVendors";
 
 
 
@@ -19,7 +20,8 @@ export {
     Newsletter,
     Testimonial,
     CustomerComment,
-Navbar
+Navbar,
+ExclusiveVendors
     
 };
 
