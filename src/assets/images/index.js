@@ -54,7 +54,7 @@ import H_GalleryImg14 from "./Horizontal_G_img14.webp";
 import H_GalleryImg15 from "./Horizontal_G_img15.webp";
 
 // Importing Footer Images
-import F_logo from "./footerlogo.png";
+import F_logo from "./MyGala_logo.png";
 
 
 export {

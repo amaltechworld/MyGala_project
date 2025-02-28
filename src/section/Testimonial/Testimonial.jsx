@@ -4,7 +4,7 @@ import {
     T_GroupSvg,
     T_InvitesSvg,
     T_commentsSvg,
-} from "../../assets/Icons/index";
+} from "../../assets/icons/index";
 
 import { testimonialData } from "./testimonialData";
 import { Apple, PlayStore } from "../../assets/badge/index";

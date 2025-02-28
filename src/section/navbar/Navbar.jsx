@@ -1,7 +1,7 @@
 
 
 import { useState } from "react";
-import { N_BagSvg } from "../../assets/Icons/index";
+import { N_BagSvg } from "../../assets/icons/index";
 import { MyGalaNav_logo } from "../../assets/images/index";
 import { ChevronDown } from "lucide-react";
 import { NavbarMobileIcon } from "../../assets/images/index";
