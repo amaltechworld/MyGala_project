@@ -3,10 +3,9 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm install
         - nvm install 22
         - nvm use 22
-        - node --version
+        - npm install
     build:
       commands:
         - npm run build
