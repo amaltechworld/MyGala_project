@@ -20,6 +20,8 @@ const ExclusiveVendors = () => {
     return (
         <>
             {/* desktop version */}
+            {/* Desktop version */}
+            {/* desktop version */}
             <div className="relative bg-[#ffefea] h-screen items-center px-10 hidden lg:flex">
                 {/* Left Content - Fixed Column */}
 
@@ -58,7 +60,7 @@ const ExclusiveVendors = () => {
                                 }`}
                                 style={{
                                     transform: `translateX(${
-                                        (index - currentIndex) * 5
+                                        (index - currentIndex) * 10
                                     }%)`,
                                 }}
                                 onClick={() => setCurrentIndex(index)} // image lead to the next page
@@ -106,7 +108,7 @@ const ExclusiveVendors = () => {
                 </div>
 
                 {/* Bottom Indicators */}
-                <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex gap-5 ">
+                <div className="absolute bottom-1/3 left-2/3 transform -translate-x-1/2 flex gap-5 ">
                     {vendorData.map((_, index) => (
                         <div
                             key={index}
@@ -150,7 +152,7 @@ const ExclusiveVendors = () => {
                                 {vendorData.map((item, index) => (
                                     <div
                                         key={item.id}
-                                        className={`relative flex-shrink-0 transition-transform duration-500 ease-in-out mx-2 ${
+                                        className={`relative flex-shrink-0 transition-transform duration-500 ease-in-out ${
                                             index === currentIndex
                                                 ? "opacity-100 scale-100 cursor-pointer"
                                                 : "opacity-90 scale-90"
