@@ -53,9 +53,9 @@ import H_GalleryImg13 from "./Horizontal_G_img13.webp";
 import H_GalleryImg14 from "./Horizontal_G_img14.webp";
 import H_GalleryImg15 from "./Horizontal_G_img15.webp";
 
+
 // footer
 import MyGalaFoot_logo from "./MyGalaFoot_Logo.png"
-
 
 export {
     // navbar

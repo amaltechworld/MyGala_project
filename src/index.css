@@ -31,7 +31,6 @@
     transform-origin: bottom left;
 }
 
-//customerComment
 .hide-scrollbar::-webkit-scrollbar {
     display: none;
 }
