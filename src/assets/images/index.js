@@ -53,8 +53,8 @@ import H_GalleryImg13 from "./Horizontal_G_img13.webp";
 import H_GalleryImg14 from "./Horizontal_G_img14.webp";
 import H_GalleryImg15 from "./Horizontal_G_img15.webp";
 
-// Importing Footer Images
-import F_logo from "./footerlogo.png";
+// footer
+import MyGalaFoot_logo from "./MyGalaFoot_Logo.png"
 
 
 export {
@@ -81,7 +81,6 @@ export {
     E_VendorImg2,
     E_VendorImg3,
     E_VendorImg4,
-
     E_VendorNavigation,
     E_VendorRightArrow,
 
@@ -112,8 +111,8 @@ export {
     H_GalleryImg14,
     H_GalleryImg15,
 
-    //  Footer Images
-    F_logo,
+    //  Footer 
+    MyGalaFoot_logo,
 };
 
 

@@ -1,4 +1,4 @@
-import { F_logo } from "../../assets/images";
+import { MyGalaFoot_logo } from "../../assets/images";
 import { footerData } from "./footerData";
 import FooterComponent from "./FooterComponent"; // grid grid-cols-1 lg:grid-cols-3
 
@@ -8,7 +8,11 @@ const Footer = () => {
             <div className="flex flex-col lg:flex-row lg:justify-between lg:gap-36 xl:gap-80 ">
                 <aside className="flex flex-col items-center lg:items-start text-center lg:text-left lg:space-y-8">
                     {/* logo lg:pl-36 */}
-                    <img src={F_logo} alt="footer_logo" className="lg:pt-2" />
+                    <img
+                        src={MyGalaFoot_logo}
+                        alt="footer_logo"
+                        className="lg:pt-3 lg:pl-[1vw] h-auto w-56"
+                    />
                     <p className="text-white md:text-xl font-poppins leading-relaxed lg:text-2xl lg:pl-5 hidden lg:block">
                         Welcome to your one-
                         <br />
