@@ -1,3 +1,4 @@
+
 # Mygala-Project
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -24,4 +25,5 @@ Mygala website 2.0
 To start the development server, run:
 ```bash
 npm run dev
+
 
